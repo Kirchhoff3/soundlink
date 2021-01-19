@@ -4,7 +4,7 @@ from datetime import datetime
 import MySQLdb
 import yaml
 
-
+app = Flask(__name__)
 
 def create_app():
 
