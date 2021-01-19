@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+
+    <head>
+        <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+            <title>{% block title %}{% endblock %}</title>  
+        </head>
+        <title>Login</title>  
+    </head>
+
+  
+
+    <body style="background-color: rgb(223, 226, 233);">
+        <header>
+            <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Soundlink</a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <h1 style="text-align:center">Login</h1>
+  <!-- Navbar -->
+        </header>
+        <div class="mx-auto mt-5" style="width: 200px;">
+        <form method= 'POST', action = ''>
+            E-mail<input type="text" name="mail"/>
+            Password <input type="password" name="password"/>
+             <input type="submit"/>
+             <a href="/register" class="button">Register</a>
+        </form>
+    </div>
+
+
+        <footer style="text-align:center;">
+            <small>&copy 2020 Uzay</small>
+        </footer>
+        
+    </body>
+
+</html>

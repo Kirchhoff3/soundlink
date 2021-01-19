@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}<h1 style="text-align:center">{{name}}</h1>
+
+<div class="mx-auto mt-5" style="width: 400px;">
+    
+ 
+    <form method= 'POST', action = ''>
+        Advertisement Info:<br><textarea name="info" rows="8" cols="50" maxlength="300"></textarea>
+        
+         <input type="submit"/>
+    </form>
+</div>
+
+
+
+{% endblock %}

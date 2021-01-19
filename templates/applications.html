@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}<h1 style= "text-align:center">Applications</h1>
+
+<div class="mx-auto" style="width: 1000px;">
+ 
+<div class="row text-center">
+
+ {% for i in apps %}
+
+<div class="col-lg-3 col-md-6 mb-4">
+    <div class="card border-primary bg-dark text-white h-100">
+      <div class="card-body bg-dark text-white">
+        <h4 class="card-title">{{i[4]}}</h4>
+        <a href="{{i[5]}}" target="_blank">{{i[6]}}</a>
+      </div>
+      <div class="card-footer bg-dark text-white">
+        <a href="/contact/{{i[0]}}" target="_blank">Contact Info</a>
+        <form action = '/confirm/{{i[0]}}'>
+        {% if i[2] == 1 %}
+        <button href="#" type = submit class="btn btn-primary disabled">Confirmed</a>
+        {% endif %}
+        {% if i[2] == 0 %}
+        <button href="/confirm/{{i[0]}}" type = submit class="btn btn-primary" >Confirm</a>
+        {% endif %}
+        </form>
+      </div>
+
+      
+    </div>
+  </div>
+{% endfor %}
+
+
+
+{% endblock %}
